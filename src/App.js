@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./styles.css";
-import { useDsipatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginUser } from "./redux/authSlice";
 
 export default function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const dispatch = useDsipatch();
+  const dispatch = useDispatch();
 
   const handleLogin = () => {
     console.log(email, password);
